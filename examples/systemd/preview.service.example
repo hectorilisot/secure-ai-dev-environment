@@ -1,0 +1,16 @@
+[Unit]
+Description=Development Static Preview
+
+[Service]
+Type=simple
+
+ExecStart=/usr/bin/caddy run --config=%h/.config/caddy/Caddyfile --adapter=caddyfile
+
+Restart=on-failure
+RestartSec=3
+
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

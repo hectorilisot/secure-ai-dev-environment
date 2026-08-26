@@ -1,0 +1,15 @@
+# Replace <VM_IP> and <DEV_USER> before using this file.
+
+{
+    admin off
+}
+
+:8080 {
+    bind 127.0.0.1 <VM_IP>
+
+    root * /home/<DEV_USER>/preview/current
+
+    file_server {
+        hide .git .codex .env .env.* .DS_Store
+    }
+}

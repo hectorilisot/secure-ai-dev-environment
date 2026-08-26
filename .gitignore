@@ -1,0 +1,44 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.p12
+auth.json
+authorized_keys
+
+# SSH
+.ssh/
+
+# Credentials / local private data
+private/
+private-local/
+secrets/
+
+# Virtual machines
+*.vhd
+*.vhdx
+*.avhd
+*.avhdx
+*.vmcx
+*.vmrs
+*.iso
+
+# Logs / temporary files
+*.log
+*.tmp
+*.bak
+*~
+
+# Editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
